@@ -5,9 +5,11 @@
     <title>JSP - Hello World</title>
 </head>
 <body>
-<%--    欢迎, <%=request.getParameter("username")%>--%>
-    欢迎,${param.username}
+    欢迎, <%=request.getParameter("username")%>
 
-    ${list}
+
+    ${list[0].uerId}<br>
+    ${list[1].userName}<br>
+    ${list[2].userPwd}<br>
 </body>
 </html>

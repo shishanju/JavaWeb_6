@@ -11,10 +11,17 @@
     <title>Title</title>
 </head>
 <body>
-<form action="UserServlet" >
+<form action="UserServlet" method="get">
     <input name="username"><br>
+    <input name="action" value="login" type="hidden"><br>
     <input name="pwd" type="password"><br>
     <input type="submit">
 </form>
+<%--    <form action="findAll">--%>
+<%--        <input name="userId" type="text"><br>--%>
+<%--        <input name="userName" type="text"><br>--%>
+<%--        <input name="userPwd" type="text"><br>--%>
+<%--        <input type="submit">--%>
+<%--    </form>--%>
 </body>
 </html>

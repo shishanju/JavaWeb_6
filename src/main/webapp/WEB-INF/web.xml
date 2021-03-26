@@ -5,11 +5,11 @@
          version="4.0">
 
     <servlet>
-        <servlet-name>UserServlet2</servlet-name>
-        <servlet-class>com.lemon.controller.HelloServlet</servlet-class>
+        <servlet-name>UserServlet</servlet-name>
+        <servlet-class>com.lemon.controller.UserServlet</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>UserServlet2</servlet-name>
-        <url-pattern>/UserServlet2</url-pattern>
+        <servlet-name>UserServlet</servlet-name>
+        <url-pattern>/UserServlet</url-pattern>
     </servlet-mapping>
 </web-app>
