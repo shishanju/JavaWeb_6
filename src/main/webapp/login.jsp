@@ -12,7 +12,7 @@
 </head>
 <body>
 <form action="UserServlet" method="get">
-    <input name="username"><br>
+    <input name="username" value="${cookie.username.value}"><br>
     <input name="action" value="login" type="hidden"><br>
     <input name="pwd" type="password"><br>
     <input type="submit">
