@@ -11,6 +11,7 @@
     <title>Title</title>
 </head>
 <body>
+在线人数：${applicationScope.count}人
 <form action="UserServlet" method="get">
     <input name="username" value="${cookie.username.value}"><br>
     <input name="action" value="login" type="hidden"><br>

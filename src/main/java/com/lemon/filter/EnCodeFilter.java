@@ -2,6 +2,7 @@ package com.lemon.filter;
 
 import javax.servlet.*;
 import javax.servlet.annotation.*;
+import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
 
 @WebFilter(filterName = "/*")
@@ -14,10 +15,11 @@ public class EnCodeFilter implements Filter {
 
     @Override
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws ServletException, IOException {
-        System.out.println("过滤器工作中");
+        //System.out.println("过滤器工作中");
         //解决post中文乱码
-        request.setCharacterEncoding("utf-8");
+        HttpServletRequest req = (HttpServletRequest) request;
+        req.setCharacterEncoding("utf-8");
         //放行
-        chain.doFilter(request, response);
+        chain.doFilter(req, response);
     }
 }
